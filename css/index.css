@@ -7,13 +7,30 @@
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	width: 30px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid #f3938b;
 	color: #d03b34;
     background: #ffe7e5;
-    border-color: #f3938b;
+    border-radius: 20px;
+    padding: 0px 10px;
 }
 
 .new{
-
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 45px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #a06e37;
+    background: #fffbdf;
+    border: 1px solid #d5b480;
+    padding: 0px 10px;
+    border-radius: 20px;
 }
 
 /*标签的公共样式结束*/
@@ -74,6 +91,7 @@
 	height: 429px;
 }
 .rexiao-list-gt .list-box>li{
+	position: relative;
 	float: left;
 	width: 305px;
 	height: 429px;
@@ -102,9 +120,47 @@
 .rexiao-list-gt .list-box>li a p:nth-child(3){
 	color: #999;
 }
-.rexiao-list-gt .list-box>li a p:nth-child(4){
+.rexiao-list-gt .list-box>li:nth-child(2) a p:nth-child(4),
+.rexiao-list-gt .list-box>li:nth-child(3) a p:nth-child(4){
 	display: none;
 	color: #e04e4e;
+}
+
+.rexiao-list-gt .list-box>li .link:hover p:nth-child(3),
+.rexiao-list-gt .list-box>li .link:hover .num{
+	display: none;
+}
+.rexiao-list-gt .list-box>li .link:hover p:nth-child(4),
+.rexiao-list-gt .list-box>li .link:hover .xiangqing{
+	display: block;
+}
+
+.rexiao-list-gt .list-box>li:nth-child(1) a p:nth-child(4){
+	color: #999;
+}
+.rexiao-list-gt .list-box>li:nth-child(1) a p:nth-child(5){
+	display: none;
+	color: #e04e4e;
+}
+.rexiao-list-gt .list-box>li:nth-child(4) a p:nth-child(4){
+	color: #999;
+}
+.rexiao-list-gt .list-box>li:nth-child(4) a p:nth-child(5){
+	display: none;
+	color: #e04e4e;
+}
+
+.rexiao-list-gt .list-box>li:nth-child(1) a:hover p:nth-child(4){
+	display: none;
+}
+.rexiao-list-gt .list-box>li:nth-child(4) a:hover p:nth-child(4){
+	display: none;
+}
+.rexiao-list-gt .list-box>li:nth-child(1) a:hover p:nth-child(5){
+	display: block;
+}
+.rexiao-list-gt .list-box>li:nth-child(4) a:hover p:nth-child(5){
+	display: block;
 }
 .rexiao-list-gt .list-box>li>a ul{
 	height: 30px;
@@ -152,15 +208,107 @@
 	background: #fafafa;
 	border-radius: 5px;
 }
-.rexiao-list-gt .list-box>li .link:hover p:nth-child(3),
-.rexiao-list-gt .list-box>li .link:hover .num{
+
+/*热销产品共同样式结束*/
+
+/*新品首发共同样式开始*/
+.gt-list{
+	width: 100%;
+	height: 858px;
+}
+.gt-list>ul>li{
+	float: left;
+	width: 305px;
+	height: 429px;
+	background: #fff;
+	border: 1px solid #efefef;
+	box-sizing: border-box;
+	text-align: center;
+}
+.gt-list>ul>li .link{
+	display: block;
+	width: 305px;
+	height: 429px;
+}
+.gt-list>ul>li .link:hover span{
 	display: none;
 }
-.rexiao-list-gt .list-box>li .link:hover p:nth-child(4),
-.rexiao-list-gt .list-box>li .link:hover .xiangqing{
+.gt-list>ul>li .link:hover .btn{
 	display: block;
 }
-/*热销产品共同样式结束
+.gt-list>ul>li .link img{
+	width: 216px;
+	height: 216px;
+	margin-top: 40px;
+}
+.gt-list>ul>li:nth-child(1){
+	width: 610px;
+	height: 429px;
+}
+.gt-list>ul>li:nth-child(1) .link{
+	width: 610px;
+	height: 429px;
+}
+.gt-list>ul>li:nth-child(1) .link img{
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+}
+.gt-list>ul>li:nth-child(4){
+	border-bottom-left-radius: 10px;
+}
+.gt-list>ul>li:nth-child(7){
+	border-bottom-right-radius: 10px;
+}
+.gt-list>ul>li .link h4{
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	padding: 10px 0PX;
+}
+.gt-list>ul>li .link p{
+	color: #999;
+	padding-bottom: 10px;
+}
+.gt-list>ul>li .link ul{
+	width: 100px;
+	height: 20px;
+	margin-left: 125px; 
+}
+.gt-list>ul>li .link ul>li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 10px; 
+	background-image: url(../images/btn3.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.gt-list>ul>li .link span{
+	display: block;
+	height: 30px;
+	font-size: 18px;
+	color: #d44d44;
+	font-weight: 700;
+	margin-top: 10px;
+}
+.gt-list>ul>li .link .btn{
+	display: none;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #e1e1e1;
+	font-weight: 700;
+	background: #f9f9f9;
+	color: #646464;
+	border-radius: 4px;
+	margin: 10px auto;
+}
+
+/*新品首发共同样式结束*/
+
 
 /*首页共同样式结束*/
 
@@ -356,8 +504,7 @@
 }
 /*轮播 热销样式*/
 .title-box{
-	height: 2000px;
-	background-color: red;
+	background-color: #ededed;
 	padding: 27px 0px;
 }
 .title-box .carousel{
@@ -422,4 +569,10 @@
 	border: 1px solid #e1e1e1;
 	color: #888;
 	margin: 20px;
+}
+/*中心内容*/
+	/*新品首发*/
+.content{
+	background: #ededed;
+	height: 1000px;
 }
