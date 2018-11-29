@@ -653,7 +653,7 @@
 .bottom-content .bottom-title{
 	padding: 30px 0px;
 }
-.bottom-content .bottom-title .rexiao-top-gt .btn{
+.rexiao-top-gt .btn{
 	width: 100px;
 	height: 35px;
 	line-height: 35px;
@@ -663,13 +663,13 @@
 	margin: 11px 15px 11px 0px;
 	border-radius: 4px;
 }
-.bottom-content .bottom-title .rexiao-top-gt .btn .link,
-.bottom-content .bottom-title .rexiao-top-gt .btn .link i{
+.rexiao-top-gt .btn .link,
+.rexiao-top-gt .btn .link i{
 	color: #666;
 	font-weight: 800;
 	font-size: 14px;
 }
-.bottom-content .bottom-title .rexiao-top-gt .btn .link i{
+.rexiao-top-gt .btn .link i{
 	padding-left: 5px;
 }
 .bottom-content .bottom-title .bottom-yy{
@@ -684,7 +684,7 @@
 	box-sizing: border-box;
 	background: #fff;
 	border-top: none;
-	transition: all 0.2s linear;
+	/*transition: all 0.2s linear;*/
 }
 .bottom-content .bottom-title .bottom-yy ul:hover{
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
@@ -706,8 +706,11 @@
 	width: 96px;
 	height: 96px;
 }
-.bottom-content .bottom-title .bottom-yy ul li:nth-child(1){
+.bottom-content .bottom-title .bottom-yy ul:hover li:nth-child(1){
 	display: none;
+}
+.bottom-content .bottom-title .bottom-yy ul:hover li:nth-child(1) + li{
+	display: block;
 }
 .bottom-content .bottom-title .bottom-yy ul li .link h4{
 	font-size: 15px;
@@ -737,6 +740,9 @@
 }
 
 /*hover部分 样式*/
+.bottom-content .bottom-title .bottom-yy ul li:nth-child(2){
+	display: none;
+}
 .bottom-content .bottom-title .bottom-yy ul li:nth-child(2) .link .content{
 	width: 210px;
 	height: 50px;
@@ -765,4 +771,205 @@
 	color: #5079d9;
 	vertical-align: -2px;
 }
+.bottom-content .bottom-title .bottom-yy ul li:nth-child(2) img{
+	width: 120px;
+	height: 120px;
+	margin: 60px 0px 20px 0px;
+}
+.bottom-content .bottom-title .bottom-yy ul li:nth-child(2) .text{
+	font-size: 14px;
+	color: #666;
+}
+.bottom-content .bottom-title .bottom-yy ul li:nth-child(2) .link .lianjie{
+	color: #5079d9;
+}
+.bottom-content .bottom-title .bottom-yy ul li:nth-child(2) .link .lianjie i{
+	color: #5079d9;
+	vertical-align: -2px;
+	margin-top: 15px;
+}
+/*论坛精选样式*/
+.bottom-content .bottom-luntan .luntan ul{
+	height: 307px;
+	padding-bottom: 60px;
+}
+.bottom-content .bottom-luntan .luntan ul li{
+	float: left;
+	width: 305px;
+	height: 307px;
+	background: #fff;
+	box-sizing: border-box;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	transition: all 0.2s linear;
+}
+.bottom-content .bottom-luntan .luntan ul li:hover{
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+.bottom-content .bottom-luntan .luntan ul li:nth-child(1){
+	border-left: 1px solid #e5e5e5;
+	border-bottom-left-radius: 10px;
+}
+.bottom-content .bottom-luntan .luntan ul li:nth-child(4){
+	border-bottom-right-radius: 10px;
+}
+.bottom-content .bottom-luntan .luntan ul li .link{
+	display: block;
+	width: 305px;
+	height: 307px;
+	line-height: 30px;
+	text-align: left;
+	padding: 24px;
+	box-sizing: border-box;
+}
+.bottom-content .bottom-luntan .luntan ul li .link img{
+	width: 260px;
+	height: 156px;
+}
+.bottom-content .bottom-luntan .luntan ul li .link h4{
+	font-size: 15px;
+	color: #333;
+	font-weight: 700;
+}
+.bottom-content .bottom-luntan .luntan ul li .link p:nth-child(3){
+	color: #999;
+	font-weight: 400;
+}
+.bottom-content .bottom-luntan .luntan ul li .link p:nth-child(4),
+.bottom-content .bottom-luntan .luntan ul li .link p:nth-child(4) i{
+	color: #5079d9;
+	font-weight: 500;
+}
+.bottom-content .bottom-luntan .luntan ul li .link p:nth-child(4) i{
+	padding-left: 6px;
+	vertical-align: -1px;
+}
+/*底部定义列表样式*/
+.foot .foot-list{
+	height: 120px;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 60px 0px;
+}
+.foot .foot-list .left-list{
+	height: 110px;
+}
+.foot .foot-list .left-list dl{
+	float: left;
+	margin-right: 90px;
+	box-sizing: border-box;
+}
+.foot .foot-list .left-list dl dt{
+	font-weight: 700;
+	color: #646464;
+}
+.foot .foot-list .left-list dl dd{
+	margin-top: 10px;
+}
+.foot .foot-list .left-list dl dd .link{
+	color: #969696;
+}
+.foot .foot-list .left-list dl dd:nth-child(2){
+	margin-top: 30px;
+}
+.foot .foot-list .left-list dl dd .link:hover{
+	color: #5079d9;
+}
 
+.foot .foot-list .right-list{
+	/*padding: 60px 0px;*/
+	text-align: right;
+}
+.foot .foot-list .right-list .num{
+	font-size: 18px;
+	color: #5079d9;
+	font-weight: 1000;
+}
+.foot .foot-list .right-list .time{
+	color: #999;
+	margin-top: 13px;
+}
+.foot .foot-list .right-list .txt{
+	color: #999;
+	margin-top: 2px;
+}
+.foot .foot-list .right-list .help{
+	float: right;
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #d0d0d0;
+	color: #5079d9;
+	background: #f5f5f5;
+	border-radius: 5px;
+	font-weight: 700;
+	margin-top: 15px;
+	box-sizing: border-box;
+}
+.foot .foot-list .right-list .help i{
+	font-size: 14px;
+	padding-right: 6px;
+}
+.foot .foot-nav{
+	padding: 30px 0px 60px;
+}
+.foot .foot-nav .left-nav .bottom{
+	line-height: 35px;
+}
+.foot .foot-nav .left-nav .top li{
+	float: left;
+	margin-left: 8px;
+}
+.foot .foot-nav .left-nav .top li .link{
+	color: #bdbdbd;
+}
+.foot .foot-nav .left-nav .top li:hover .link{
+	color: #5079d9;
+}
+.foot .foot-nav .left-nav .top li:nth-child(1){
+	color: #bdbdbd;
+	margin-left: 0px;
+}
+.foot .foot-nav .left-nav .top li span{
+	display: inline-block;
+	width: 1px;
+	height: 12px;
+	background: #ccc;
+	margin-left: 8px;
+	vertical-align: -2px;
+}
+.foot .foot-nav .left-nav .bottom li{
+	float: left;
+	margin-left: 20px;
+}
+.foot .foot-nav .left-nav .bottom li:nth-child(1){
+	margin-left: 0px;
+}
+.foot .foot-nav .left-nav .bottom li .link{
+	color: #bdbdbd;
+}
+.foot .foot-nav .right-nav .link{
+	display: inline-block;
+	height: 50px;
+}
+.foot .foot-nav .right-nav .link div{
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	border: 1px solid #c4c4c4;
+	background-image: url(../images/hongxing.jpg);
+	background-repeat: no-repeat;
+	background-size: 16px 14px;
+	vertical-align: -2px;
+	margin-right: 6px;
+}
+.foot .foot-nav .right-nav .link span{
+	color: #45474b;
+	font-weight: 400;
+	margin-right: 18px;
+}
+.foot .foot-nav .right-nav .link i{
+	font-size: 12px;
+	font-weight: 400;
+	color: #bdbdbd;
+}
