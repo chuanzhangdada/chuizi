@@ -1,0 +1,260 @@
+.header{
+	height: 101px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DCDCDC;
+	}
+	.header .header-main{
+		height: 59px;
+		background: #AC1D15;
+	}
+	.header .header-main .logo{
+		float: left;
+		width: 24px;
+		height: 24px;
+		margin: 18px 0;
+		background: url('../images/forum-logo.jpg') no-repeat 50% 50%;
+	}
+	.header .header-main .logo a{
+		display: block;
+		text-indent: -999em;
+	}
+	.header .header-main .user{
+		float: right;
+		width: 107.81px;
+		height: 59px;
+		line-height: 59px;
+		font-size: 12px;
+		color: #fff;
+		text-align: right;
+	}
+	.header .header-main .header-menu{
+		height: 59px;
+		padding: 21px 0;
+		color: #fff;
+		font-size: 14px;
+		box-sizing: border-box;
+		float: right;
+	}
+	.header .header-main .header-menu li{
+		width: 86px;
+		float: left;
+	}
+	.header .header-main .header-menu li:last-child{
+		border-right: 1px solid gray;
+	}
+
+
+	.header .location{
+		background: #fff;
+	}
+	.header .location h2{
+		float: left;
+		line-height: 42px;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.header .location .iconfont{
+		font-size: 14px;
+		color: red;
+		font-weight: bolder;
+		margin-right: 3px;
+	}
+	.header .location .scbar{
+		float: right;
+		margin-top: 9px;
+		padding: 2px 3px;
+		font-size: 12px;
+		color: gray;
+		border: 3px solid #EAEAEA;
+		border-radius: 12px;
+	}
+	.header .location .scbar div{
+		float: left;
+	}
+	.header .location .scbar-type{
+		width: 50px;
+		margin-left: 3px;
+		text-align: center;
+	}
+	.header .location .scbar-type .iconfont{
+		margin-left: 5px;
+		color: gray;
+		font-size: 12px;
+	}
+	.header .location .scbar-txt input{
+		margin-left: 5px;
+		width: 110px;
+		height: 17px;
+		border: 0;
+	}
+	.header .location .scbar-btn{
+		margin-left: 5px;
+		text-align: center;
+	}
+
+
+.main{
+	height: 4290px;
+	background: #fff;
+}
+.main .carousel{
+	position: relative;
+	height: 460px;
+	border: 1px solid #000;
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.main .carousel .carousel-item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+.main .carousel .carouse-img img{
+	width: 100%;
+	height: 100%;
+}
+.main .carousel .carousel-btn{
+	position: absolute;
+	left: 50%;
+	margin-left: -26px;
+	bottom: 24px;
+}
+.main .carousel .carousel-btn li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border: 3px solid #b5b3ad;
+	border-radius: 50%;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+
+
+.main .content{
+	height: 3830px;
+}
+.main .content .left{
+	display: inline-block;
+	width: 788px;
+}
+.main .content .left .foldbleBox{
+	width: 786px;
+	overflow: hidden;
+	border: 2px solid #d9d9d9;
+	border-radius: 12px;
+	line-height: 59px;
+	background-color: #F7F7F7;
+}
+.main .content .left .foldbleBox h3{
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 20px;
+	color: #757575;
+	border-bottom: 1px solid #d9d9d9;
+}
+.main .content .left .fold-btn{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 18px;
+	right: 30px;
+	cursor: pointer;
+	background-color: red;
+}
+/* 内容左边板块盒子 */
+.main .content .left .content-section{
+	width: 786px;
+	border-bottom: 1px solid red;/* more前面的线 */
+}
+.main .content .left .content-box{
+	width: 726px;
+	box-sizing: border-box;
+	padding-top: 28px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d9d9d9;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.main .content .left .content-box:last-child{
+	border-bottom: none;
+}
+.main .content .left .content-box h2{
+	font-size: 18px;
+	font-weight: 400;
+	color: #4f4f4f;
+}
+.main .content .left .content-box .post-info{
+	height: 15px;
+	font: 12px;
+	color: #8c8c8c;
+	padding: 17px 0;
+}
+.content-box .post-info li{
+	list-style: none;
+	line-height: 15px;
+}
+.content-box .post-info .author{
+	padding-right: 10px;
+	float: left;
+}
+.content-box .post-info .time{
+	color: #b2b2b2;
+	padding-left: 10px;
+	float: left;
+}
+.content-box .post-info .review{
+	text-align: right;
+	padding-left: 30px;
+	float: right;
+}
+.content-box .post-info .browse{
+	text-align: right;
+	padding-left: 33px;
+	margin-left: 20px;
+	float: right;
+}
+.content-box .content-picture{
+	height: 300px;
+	border-radius: 12px;
+	overflow: hidden;
+}
+.content-box .content-picture img{
+	width: 100%;
+	height: 100%;
+}
+.content-box p{
+	margin: 16px 0 0;
+	font-size: 14px;
+	color: #737373;
+	line-height: 200%;
+}
+.content-box p a{
+	text-decoration: none;
+	color: #cc3e39;
+}
+.main .content .foldbleBox .more{
+	height: 58px;
+	background: #f8f8f8;
+
+}
+
+
+.main .content .right{
+	float: right;
+	width: 322px;
+	height: 300px;
+	background-color: blue;
+}
+
+
+.footer{
+	height: 262px;
+	background: #ccc;
+}
