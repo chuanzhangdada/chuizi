@@ -94,8 +94,7 @@
 
 
 .main{
-	height: 4290px;
-	background: #fff;
+	/*background: #fff;*/
 }
 .main .carousel{
 	position: relative;
@@ -135,12 +134,12 @@
 
 
 .main .content{
-	height: 3830px;
 }
 .main .content .left{
 	display: inline-block;
 	width: 788px;
 }
+/*left共通*/
 .main .content .left .foldbleBox{
 	width: 786px;
 	overflow: hidden;
@@ -149,7 +148,10 @@
 	line-height: 59px;
 	background-color: #F7F7F7;
 }
-.main .content .left .foldbleBox h3{
+.main .content .left .foldbleBox:first-child{
+	margin-bottom: 20px;
+}
+.left .foldbleBox h3{
 	position: relative;
 	font-weight: 400;
 	font-size: 16px;
@@ -157,15 +159,16 @@
 	color: #757575;
 	border-bottom: 1px solid #d9d9d9;
 }
-.main .content .left .fold-btn{
+.left .fold-btn{
 	display: inline-block;
+	position: absolute;
 	width: 20px;
 	height: 20px;
-	position: absolute;
 	top: 18px;
 	right: 30px;
+	background-image: url('../images/forum-jianhao.png');
+	background-size: contain;
 	cursor: pointer;
-	background-color: red;
 }
 /* 内容左边板块盒子 */
 .main .content .left .content-section{
@@ -176,7 +179,7 @@
 	width: 726px;
 	box-sizing: border-box;
 	padding-top: 28px;
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 	border-bottom: 1px solid #d9d9d9;
 	margin-left: auto;
 	margin-right: auto;
@@ -190,36 +193,39 @@
 	font-weight: 400;
 	color: #4f4f4f;
 }
-.main .content .left .content-box .post-info{
+
+/*left列表共通*/
+.post-info{
 	height: 15px;
-	font: 12px;
+	font-size: 12px;
 	color: #8c8c8c;
 	padding: 17px 0;
 }
-.content-box .post-info li{
+.post-info li{
 	list-style: none;
 	line-height: 15px;
 }
-.content-box .post-info .author{
+.post-info .author{
 	padding-right: 10px;
 	float: left;
 }
-.content-box .post-info .time{
+.post-info .time{
 	color: #b2b2b2;
 	padding-left: 10px;
 	float: left;
 }
-.content-box .post-info .review{
+.post-info .review{
 	text-align: right;
 	padding-left: 30px;
 	float: right;
 }
-.content-box .post-info .browse{
+.post-info .browse{
 	text-align: right;
 	padding-left: 33px;
 	margin-left: 20px;
 	float: right;
 }
+
 .content-box .content-picture{
 	height: 300px;
 	border-radius: 12px;
@@ -242,19 +248,340 @@
 .main .content .foldbleBox .more{
 	height: 58px;
 	background: #f8f8f8;
+	text-align: center;
+	line-height: 58px;
 
+}
+.main .content .foldbleBox .more a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #bdbdbd;
+	padding-right: 18px;
+}
+
+.main .content .left .js-list{
+	border-bottom: 1px solid #e0e0e0;
+
+}
+.js-list .discuss-box{
+	height: 50px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid black;
+	margin: 20px 30px 0px;
+}
+.js-list .discuss-box:last-child{
+	border-bottom: none;
+}
+.js-list .portrait{
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 50px;
+	background: red;
+}
+.js-list .portrait img{
+	width: 100%;
+	height: 100%;
+}
+.avatar-level-icon{
+	position: absolute;
+	right: -3px;
+	bottom: -5px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/forum-disA.png);
+	background-size: contain;
+}
+
+
+
+.js-list .discuss-content{
+	line-height: 15px;
+	float: left;
+	margin-left: 19px;
+	width: 656px;
+	background: #fff;
+}
+.js-list .discuss-content a{
+	font-size: 16px;
+	font-weight: 400;
+	color: #737373;
+}
+
+.main .left .forum-list-pager{
+	height: 56px;
+	background: #f8f8f8;
+}
+.forum-list-pager .pg{
+	width: 429px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid;
+	margin-top: 12px;
+	position: relative;
+	left: 50%;
+	margin-left: -203px;
+	border-radius: 4px;
+}
+.forum-list-pager .pg strong{
+	display: inline-block;
+	width: 50px;
+	color: #fff;
+	text-align: center;
+	margin-right: -5px;
+	background-color: #c83d38;
+	box-sizing: border-box;
+}
+.forum-list-pager .pg a{
+	color: black;
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	border-left: 1px solid blue;
+	box-sizing: border-box;
 }
 
 
 .main .content .right{
 	float: right;
 	width: 322px;
-	height: 300px;
-	background-color: blue;
+
+}
+.right-module{
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	overflow: hidden;/* 让边框圆角不被遮盖 */
+	margin-bottom: 15px;
+}
+.right .signbox{
+	position: relative;
+	height: 57px;
+	color: #757575;
+	background: #f5f5f5;
+	font-weight: 400;
+	text-indent: 31px;
+	line-height: 57px;
+
+}
+.right .signbox .sign-rules{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	z-index: 200;
+	top: 32%;
+	left: 32%;
+	background: url('../images/forum-i .png');
+	background-size: contain;
+}
+.right .signbox .sign-button{
+	border: 1px solid #d9d9d9;
+	border-radius: 8px;
+	width: 102px;
+	height: 42px;
+	color: #a16a32;
+	background: #FFEDBB;
+	line-height: 42px;
+	font-size: 16px;
+	position: absolute;
+	z-index: 200;
+	top: 8.4px;
+	right: 3%;
+	text-align: center;
+	text-indent: 0;
+}
+.right .right-module h4{
+	height: 57px;
+	line-height: 57px;
+	font-size: 16px;
+	background: #f5f5f5;
+	color: #757575;
+	text-indent: 31px;
+	font-weight: 400;
+}
+.right .right-module .palte-list{
+}
+.right .right-module .palte-list li:nth-child(odd){
+	position: relative;
+	float: left;
+	width: 159px;
+	height: 66px;
+	line-height: 66px;
+	border-bottom: 1px solid red;
+	border-right: 1px solid red;
+	text-indent: 60px;
+}
+.right .right-module .palte-list li:last-child{
+	border-bottom: none;
+}
+.right .right-module .palte-list li:nth-child(even){
+	position: relative;
+	float: right;
+	width: 159px;
+	height: 66px;
+	line-height: 66px;
+	text-indent: 60px;
+	border-bottom: 1px solid red;
+}
+.palte-list .iconfont{
+	position: absolute;
+	left: -35px;
+}
+.palte-list li a{
+	color: black;
+}
+.right .plates{
+	height: 198px;
+	border-radius: 7px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.07) 0 1px 3px;
+}
+.right .plates img{
+	width: 100%;
+	height: 100%;
+}
+
+.offical-SNS-list{
+	border-top: #f5f5f5 solid 1px;
+	border-bottom: #f5f5f5 solid 1px;
+}
+.offical-SNS-list li{
+	float: left;
+	font-size: 14px;
+	line-height: 70px;
+	text-indent: 58px;
+}
+.offical-SNS-list .offical-SNS-weibo{
+	width: 159px;
+	height: 70px;
+	border-right: #f5f5f5 solid 1px;
+}
+.offical-SNS-list a{
+	color: black;
+}
+.offical-SNS-list .offical-SNS-wechat{
+	width: 159px;
+	height: 70px;
+	border-bottom: #f5f5f5 solid 1px;
+}
+.right-module .offical-app-list{
+	position: relative;
+	height: 86px;
+}
+.offical-app-list .app-img{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	width: 58px;
+	height: 58px;
+}
+.offical-app-list .app-img img{
+	width: 100%;
+	height: 100%;
+}
+.offical-app-list li dl{
+	position: absolute;
+	left: 96px;
+	top:30px;
+}
+.offical-app-list .qr-trigger{
+	position: absolute;
+	right: 20px;
+	top: 35px;
+	width: 30px;
+	height: 30px;
+	background: url('../images/forum-app2.png');
+	background-size: contain;
+}
+.right-module .os-rom-panel{
+	margin:0 auto;
+	width: 280px;
+}
+.os-rom-panel .os-rom-panel-seleccts{
+	height: 105px;
+	background: green;
+}
+.os-rom-panel .os-rom-panel-buttons{
+	height: 60px;
+	background: red;
+}
+.os-rom-panel .os-rom-panel-info{
+	height: 37px;
+	background: blue;
+}
+
+/*推荐共通*/
+.right-module .recommend-list li{
+	width: 292px;
+	height: 126.75px;
+	border-radius: 8px;
+	overflow: hidden;
+	background: red;
+	margin:0 auto;
+	margin-bottom: 5px;
+}
+.right-module .recommend-list li:last-child{
+	margin-bottom: 15px;
 }
 
 
 .footer{
-	height: 262px;
-	background: #ccc;
+	/*height: auto;*/
+	height: 260px;
+	background: #fafafa;
+	padding-bottom: 36px;
+}
+.link ul{
+	position: relative;
+	top:45px;
+	margin: 0 0 0-21px;
+	display: block;
+}
+.link ul li{
+	float: left;
+	line-height: 12px;
+	padding: 0 20px;
+	margin: 12px 0;
+	border-left: 1px solid red;
+}
+.link ul li:first-child{
+	border-left: none;
+}
+.link ul li:nth-child(12){
+	border-left: none;
+}
+.link ul li a{
+	color: #757575;
+	font-size: 12px;
+}
+.copyright{
+	margin-top: 78px;
+	padding-top: 25px;
+	height: 50px;
+	background: green;
+	border-top: 1px solid red;
+}
+.copyright h6{
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 35px;
+	color: #bdbdbd;
+}
+.copyright ul{
+	float: right;
+	height: 14px;
+	position: relative;
+	top: -2px;
+	left: 10px;
+}
+.copyright ul li{
+	float: left;
+	line-height: 12px;
+	padding: 0 10px;
+	margin:10px 0;
+}
+.copyright ul li a{
+	font-size: 12px;
+	color: #bdbdbd;
 }
