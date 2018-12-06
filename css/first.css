@@ -16,6 +16,9 @@ li{
 	top: 25px;
 	left: 170px;
 }
+.top .top-nav1 {
+	z-index: 999;
+}
 .top .top-nav1 a{
 	float: left;
 	color: #666;
@@ -42,6 +45,9 @@ li{
 	height: 100px;
 	line-height: 100px;
 	position: relative;
+	left: 0;
+	top:-100px;
+
 }
 .top .cart-shop .cart-nav .fa-user{
 	position: absolute;
@@ -75,7 +81,7 @@ li{
 	text-align: center;
 	line-height: 20px;
 	background: #fff;
-	z-index: 9999;
+	z-index:88;
 	transition: all 0.3s linear;
 }
 .top .cart-shop .tankuang i{
@@ -108,6 +114,7 @@ li{
 }
 .user-info .user-info-item:first-child{
 	margin-left: 160px;
+	
 }
 .user-info .user-info-item a:hover{
     color: white;
