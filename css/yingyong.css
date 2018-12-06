@@ -222,8 +222,9 @@
 	color: #666;
 }
 .top-nav .nav-shop .tankuang{
-	visibility: hidden;
-	opacity: 0;
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
+	display: none;
 	position: absolute;
 	top: 47px;
 	right: 20px;
@@ -249,10 +250,10 @@
 	color: #bcbcbc;
 	line-height: 20px;
 }
-.top-nav .nav-shop .link:nth-child(2):hover + .tankuang{
+/* .top-nav .nav-shop .link:nth-child(2):hover + .tankuang{
 	visibility: visible;
 	opacity: 1;
-}
+} */
 /*列表导航样式*/
 .list-nav{
 	height: 75px;
