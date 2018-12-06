@@ -43,8 +43,15 @@ li{
 	line-height: 100px;
 	position: relative;
 }
-.top .cart-shop .cart-nav{
-	padding-left: 30px;
+.top .cart-shop .cart-nav .fa-user{
+	position: absolute;
+	top: 47px;
+	right: 240px;
+}
+.top .cart-shop .cart-nav .fa-shopping-bag{
+	position: absolute;
+	top: 47px;
+	right: 180px;
 }
 .top .cart-shop .link:first-child i{
 	font-size: 18px;
@@ -53,7 +60,6 @@ li{
 .top .cart-shop .link i{
 	color: #aaa;
 	font-size: 16px;
-	margin-right: 40px;
 }
 .top .cart-shop .link:hover i{
 	color: #666;
@@ -61,8 +67,8 @@ li{
 .top .cart-shop .tankuang{
 	display: none;
 	position: absolute;
-	top: 47px;
-	right: 20px;
+	top: 80px;
+	right: 180px;
 	width: 360px;
 	height: 300px;
 	border-radius: 10px;
@@ -81,12 +87,12 @@ li{
 	font-size: 18px;
 	color: #333;
 	font-weight: 400;
+	padding-top: 20px;
 }
 .top .cart-shop .tankuang p{
 	color: #bcbcbc;
 	line-height:20px;
 }
-
 
 .user-info{
 	height: 40px;
@@ -112,7 +118,7 @@ li{
 	float: right;
 	font-size: 12px;
 	line-height: 40px;
-	margin-right:260px;
+	margin-right:180px;
 	color: #666;
 	text-align: center;
 }
@@ -154,10 +160,8 @@ li{
 	width: 1583px;
 	height: 948px;
 	background-repeat: no-repeat;
-	margin-bottom: 218px;
-	margin-top: -2px;
+	margin:-2px 0px 218px 0px;
 	margin-left: -2px;
-
 }
 .header .header-nav .txt1{
 	display: inline-block;
@@ -183,29 +187,37 @@ li{
 	background-repeat: no-repeat;
 }
 .header .header-nav .box{
-	height: 252px;
+	height:330px;
 	margin-top: -10px;
 	background-color: #d4dde6;
 }
 .header .header-nav .list-item{
-	width: 756px;
-	height: 252px;
+	width: 1080px;
+	height: 330px;
 	margin: 0 auto;
 	border-top: none;
 	background-color: #d4dde6;
 }
 .header .header-nav .list-nav-item{
 	float: left;
-	width: 125px;
-	height: 84px;
+	width: 180px;
+	height:110px;
 	text-align: center;
 	font-size: 16px;	
 	color: #3b444b;
 	border: 1px solid #ccc;
+	border-right: none;
 	box-sizing: border-box;
 }
+.header .header-nav .list-nav-item:first-child,
+.header .header-nav .list-nav-item:nth-child(7),
+.header .header-nav .list-nav-item:nth-child(13){
+	border-left: none;
+}	
+
 .header .header-nav dt{
    margin-top: 20px;
+   font-weight: 700;
 }
 .header .header-nav dd{
     margin-top: 10px;
