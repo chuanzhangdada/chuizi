@@ -173,7 +173,7 @@
 /* 内容左边板块盒子 */
 .main .content .left .content-section{
 	width: 786px;
-	border-bottom: 1px solid red;/* more前面的线 */
+	border-bottom: 1px solid #eee;/* more前面的线 */
 }
 .main .content .left .content-box{
 	width: 726px;
@@ -225,6 +225,12 @@
 	margin-left: 20px;
 	float: right;
 }
+.post-info i{
+	margin-right: 10px;
+	font-size: 20px;
+	color: #ccc;
+	vertical-align: -2px;
+}
 
 .content-box .content-picture{
 	height: 300px;
@@ -266,7 +272,7 @@
 .js-list .discuss-box{
 	height: 50px;
 	padding-bottom: 20px;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #eee;
 	margin: 20px 30px 0px;
 }
 .js-list .discuss-box:last-child{
@@ -300,7 +306,6 @@
 	float: left;
 	margin-left: 19px;
 	width: 656px;
-	background: #fff;
 }
 .js-list .discuss-content a{
 	font-size: 16px;
@@ -316,7 +321,7 @@
 	width: 429px;
 	height: 30px;
 	line-height: 30px;
-	border: 1px solid;
+	border: 1px solid #ccc;
 	margin-top: 12px;
 	position: relative;
 	left: 50%;
@@ -337,7 +342,7 @@
 	display: inline-block;
 	width: 50px;
 	text-align: center;
-	border-left: 1px solid blue;
+	border-left: 1px solid #ccc;
 	box-sizing: border-box;
 }
 
@@ -406,8 +411,8 @@
 	width: 159px;
 	height: 66px;
 	line-height: 66px;
-	border-bottom: 1px solid red;
-	border-right: 1px solid red;
+	border-bottom: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
 	text-indent: 60px;
 }
 .right .right-module .palte-list li:last-child{
@@ -420,7 +425,7 @@
 	height: 66px;
 	line-height: 66px;
 	text-indent: 60px;
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #f5f5f5;
 }
 .palte-list .iconfont{
 	position: absolute;
@@ -542,7 +547,7 @@
 	line-height: 12px;
 	padding: 0 20px;
 	margin: 12px 0;
-	border-left: 1px solid red;
+	border-left: 1px solid #e0e0e0;
 }
 .link ul li:first-child{
 	border-left: none;
@@ -558,8 +563,7 @@
 	margin-top: 78px;
 	padding-top: 25px;
 	height: 50px;
-	background: green;
-	border-top: 1px solid red;
+	border-top: 1px solid #e0e0e0;
 }
 .copyright h6{
 	float: left;
