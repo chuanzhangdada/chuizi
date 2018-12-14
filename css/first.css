@@ -35,11 +35,17 @@ li{
 .top .top-nav1 .top-nav-item:first-child{
 	margin-left: 270px;
 }
+.top .top-nav1 .top-nav-item .checked{
+    color: white;
+    font-weight: bold;	
+}
 .top .top-nav1 .top-nav-item a:hover{
     color: white;
     font-weight: bold;
     transition: transform 0.2s linear;
 }
+
+/*购物车弹窗*/
 
 .top .cart-shop{
 	height: 100px;
@@ -47,16 +53,23 @@ li{
 	position: relative;
 	left: 0;
 	top:-100px;
-
+}
+.top .cart-shop .cart-nav .sep{
+	position: absolute;
+	top: 1px;
+	right: 290px;
+	width: 1px;
+	height: 1px;
+	color: #ccc;
 }
 .top .cart-shop .cart-nav .fa-user{
 	position: absolute;
-	top: 47px;
+	top: 44px;
 	right: 240px;
 }
 .top .cart-shop .cart-nav .fa-shopping-bag{
 	position: absolute;
-	top: 47px;
+	top: 44px;
 	right: 180px;
 }
 .top .cart-shop .link:first-child i{
@@ -81,7 +94,7 @@ li{
 	text-align: center;
 	line-height: 20px;
 	background: #fff;
-	z-index:8;
+	z-index:999;
 	transition: all 0.3s linear;
 }
 .top .cart-shop .tankuang i{
@@ -93,13 +106,16 @@ li{
 	font-size: 18px;
 	color: #333;
 	font-weight: 400;
-	/*padding-top: 30px;*/
+	padding-top: 30px;
 }
 .top .cart-shop .tankuang p{
 	color: #bcbcbc;
 	line-height:20px;
 }
 
+/*
+*导航栏部分*
+*/
 .user-info{
 	height: 40px;
 	background: #232323;
@@ -167,8 +183,6 @@ li{
 	width: 1583px;
 	height: 948px;
 	background-repeat: no-repeat;
-	margin:-2px 0px 218px 0px;
-	margin-left: -2px;
 }
 .header .header-nav .txt1{
 	display: inline-block;
@@ -243,7 +257,9 @@ li{
 	padding:27px 0px;
 }
 /*底部定义列表样式*/
-
+.foot{
+	border-top: 1px solid #ccc;
+}
 .foot .foot-list{
 	height: 120px;
 	border-bottom: 1px solid #e6e6e6;
@@ -273,6 +289,7 @@ li{
 .foot .foot-list .left-list dl dd .link:hover{
 	color: #5079d9;
 }
+
 
 .foot .foot-list .right-list{
 	text-align: right;

@@ -43,14 +43,22 @@ li{
 	line-height: 100px;
 	position: relative;
 }
+.top .cart-shop .cart-nav .sep{
+	position: absolute;
+	top: 1px;
+	right: 290px;
+	width: 1px;
+	height: 1px;
+	color: #ccc;
+}
 .top .cart-shop .cart-nav .fa-user{
 	position: absolute;
-	top: 47px;
+	top: 44px;
 	right: 240px;
 }
 .top .cart-shop .cart-nav .fa-shopping-bag{
 	position: absolute;
-	top: 47px;
+	top: 44px;
 	right: 180px;
 }
 .top .cart-shop .link:first-child i{
@@ -156,10 +164,8 @@ li{
 	background-color: #101010;
 }
 .header .header-nav .aa{
-	border-left: -2px;
 	width: 100%;
 	height: 100%;
-	margin:-2px 0 30px;
 }
 .header .header-nav .bb{
 	display: inline-block;
@@ -167,7 +173,7 @@ li{
 	height: 100%;
 	background-repeat: no-repeat;
 }
-.header .header-nav .list-item{
+/*.header .header-nav .list-item{
 	width: 1080px;
 	height: 330px;
 	margin: 0 auto;
@@ -200,7 +206,7 @@ li{
 .header .header-nav dd{
     margin-top: 10px;
     font-size: 12px;
-}
+}*/
 .header .header-nav .cc{
 	width: 100%;
 	height: 100%;
@@ -214,7 +220,9 @@ li{
 	padding:27px 0px;
 }
 /*底部样式*/
-
+.foot{
+    border-top: 1px solid #ccc;
+}
 .foot .foot-list{
 	height: 120px;
 	border-bottom: 1px solid #e6e6e6;
