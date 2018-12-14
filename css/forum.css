@@ -85,7 +85,8 @@
 		margin-left: 5px;
 		width: 110px;
 		height: 17px;
-		border: 0;
+		border: none;
+		outline: none;
 	}
 	.header .location .scbar-btn{
 		margin-left: 5px;
@@ -141,7 +142,9 @@
 }
 /*left共通*/
 .main .content .left .foldbleBox{
+/* #foldbleBox{ */
 	width: 786px;
+	/* height: 59px; */
 	overflow: hidden;
 	border: 2px solid #d9d9d9;
 	border-radius: 12px;
@@ -159,7 +162,7 @@
 	color: #757575;
 	border-bottom: 1px solid #d9d9d9;
 }
-.left .fold-btn{
+#fold-btn{
 	display: inline-block;
 	position: absolute;
 	width: 20px;
@@ -170,6 +173,8 @@
 	background-size: contain;
 	cursor: pointer;
 }
+
+
 /* 内容左边板块盒子 */
 .main .content .left .content-section{
 	width: 786px;
@@ -354,7 +359,7 @@
 }
 .right-module{
 	border: 1px solid #d9d9d9;
-	border-radius: 8px;
+	border-radius: 7px;
 	overflow: hidden;/* 让边框圆角不被遮盖 */
 	margin-bottom: 15px;
 }
@@ -504,15 +509,65 @@
 }
 .os-rom-panel .os-rom-panel-seleccts{
 	height: 105px;
-	background: green;
+	position: relative;
 }
+.element-select{
+	margin-top: 20px;
+    border: 1px solid #ccc;
+	border-radius: 7px;
+    overflow: hidden;
+}
+.element-select .select-first{
+	z-index: 2;
+}
+.elememt-select-current{
+	display: block;
+	font-size: 14px;
+	width: 100%;
+	height: 38px;
+    line-height: 40px;
+    color: #757575;
+    background: #ededed;
+    text-indent: 16px;
+}
+.elememt-select-current a{
+	font-size: 14px;
+    color: #999;
+    background-position: 253px center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url('');
+}
+.element-select .element-select-list{
+	background: #FFF;
+    display: block;
+    height: 0;/* 动作点 */
+    font-size: 12px;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,.07) 0 1px 3px;
+}
+.element-select .element-select-list li{
+	height: 38px;
+	line-height: 39px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.element-select .element-select-list li:first-child{
+	border-top: none;
+}
+
+
+
+
 .os-rom-panel .os-rom-panel-buttons{
-	height: 60px;
-	background: red;
+	width: 280px;
+    margin-top: 15px;
+    padding-bottom: 18px;
 }
 .os-rom-panel .os-rom-panel-info{
-	height: 37px;
-	background: blue;
+	border-top: #f2f2f2 solid 1px;
+    padding-top: 18px;
 }
 
 /*推荐共通*/
@@ -524,9 +579,25 @@
 	background: red;
 	margin:0 auto;
 	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.right-module .recommend-list li:first-child{
+	background: url('../images/forum-1512371366539.png') no-repeat;
+	background-size: contain;
+}
+.right-module .recommend-list li:nth-child(2){
+	background: url('../images/forum-1512371369278.png') no-repeat;
+	background-size: contain;
+}
+.right-module .recommend-list li:nth-child(3){
+	background: url('../images/forum-1512371366539.png') no-repeat;
+	background-size: contain;
 }
 .right-module .recommend-list li:last-child{
 	margin-bottom: 15px;
+	background: url('../images/forum-1512371190746.png') no-repeat;
+	background-size: contain;
 }
 
 
