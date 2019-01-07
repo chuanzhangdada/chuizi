@@ -1,4 +1,15 @@
-//郝鑫宁  坚果R1 js部分
+//郝鑫宁   js部分
+window.onload = function(){
+	var oUl = document.querySelector('.top-nav1');
+	var oLi = document.querySelectorAll('.top-nav-item');
+	oLi.onmouseover = function(){
+		oLi.style.backgroundColor = 'white';
+		oLi.style.fontWeight = 'bold';
+	}
+	oLi.onmouseout = function(){
+		oLi.style.backgroundColor = '#666';
+	}
+}
 
 window.onload = function(){
 	// 顶部导航购物车js

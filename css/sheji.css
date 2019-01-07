@@ -39,6 +39,10 @@ li{
 	text-align: center;
 	margin-left:40px;
 }	
+.top .top-nav1 .top-nav-item .checked{
+	color: white;
+    font-weight: bold;
+}
 .top .top-nav1 .top-nav-item:first-child{
 	margin-left: 270px;
 }
@@ -132,7 +136,11 @@ li{
 .user-info .user-info-item a:hover{
     color: white;
     font-weight: bold;
-    transition: transform 0.2s linear;
+    transition: all 0.2s linear;
+}
+.user-info .user-info-item .checked{
+    color: white;
+    font-weight: bold;
 }
 .user-info .user-info-right{
 	float: right;
@@ -175,6 +183,76 @@ li{
 	height: 948px;
 	background-repeat: no-repeat;
 }
-.user-info .user-info-right .bb{
-	margin-top: -10px;
+.describe{
+	position: relative;
+    height: 1031px;
+	background: url(../images/sheji-3.jpg) no-repeat;
+	background-size: contain;
 }
+.describe .txt1{
+	position: absolute;
+	top: 140px;
+	left: 50%;
+	margin-left: -169px;
+	font-size: 26px;
+	color: #776451;
+}
+.describe .txt2{
+	position: absolute;
+	margin-left: -67px;
+	top: 170px;
+	left: 50%;
+	font-size: 12px;
+	color: #776451;
+	margin-top: 30px;
+}
+.describe img{
+	display: inline-block;
+	float: left;
+	width: 252px;
+	height: 504px;
+	margin-top: 280px;
+	margin-left: 60px;
+}
+.span-content .left-arrow{
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	background-color: #f60;
+	
+}
+.span-content .txt3{
+    font-size: 18px;
+    position: absolute;
+    top: 840px;
+    left: 50%;
+    margin-left: -90px;
+    color: #815c7f;
+}
+.span-content .txt4{
+	font-size: 14px;
+	color: #815c7f;
+	position: absolute;
+	top: 880px;
+	left: 50%;
+	margin-left: -211px;
+}
+.span-content .txt5{
+	font-size: 14px;
+	color: #815c7f;
+	position: absolute;
+	top: 905px;
+	left: 50%;
+	margin-left: -176px;
+}
+.span-content .wire{
+	margin-top: 940px;
+	border-bottom: 2px dashed #ccc;
+}
+.span-content .wire .cicle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	color: #9d8976;
+}
+

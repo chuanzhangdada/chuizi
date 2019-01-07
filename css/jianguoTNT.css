@@ -28,6 +28,10 @@ li{
 	line-height: 100px;
 	text-align: center;
 	margin-left:40px;
+}
+.top .top-nav1 .top-nav-item .checked{
+	color: white;
+    font-weight: bold;
 }	
 .top .top-nav1 .top-nav-item:first-child{
 	margin-left: 270px;
@@ -35,7 +39,7 @@ li{
 .top .top-nav1 .top-nav-item a:hover{
     color: white;
     font-weight: bold;
-    transition: transform 0.2s linear;
+    transition: all 0.2s linear;
 }
 /* 购物车弹窗样式*/
 .top .cart-shop{
@@ -122,6 +126,10 @@ li{
     font-weight: bold;
     transition: transform 0.2s linear;
 }
+.user-info .user-info-item .checked{
+	color: white;
+    font-weight: bold;
+}
 .user-info .user-info-right{
 	float: right;
 	font-size: 12px;
@@ -133,7 +141,7 @@ li{
 .user-info .user-info-right a:hover{
 	color: white;
     font-weight: bold;
-    transition: transform 0.2s linear;
+    transition:all 0.5s linear;
 }
 .user-info .user-info-right a{
 	color: #666;
