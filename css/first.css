@@ -16,9 +16,6 @@ li{
 	top: 25px;
 	left: 170px;
 }
-/*.top .top-nav1 {
-	z-index: 1000;
-}*/
 .top .top-nav1 a{
 	float: left;
 	color: #666;
@@ -53,11 +50,12 @@ li{
 /*购物车弹窗*/
 
 .top .cart-shop{
+	width: 100px;
 	height: 100px;
 	line-height: 100px;
-	position: relative;
-	left: 0;
-	top:-100px;
+	position: absolute;
+	right: -20px;
+	top:0px;
 }
 .top .cart-shop .cart-nav .sep{
 	position: absolute;

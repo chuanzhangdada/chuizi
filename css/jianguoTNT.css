@@ -43,9 +43,12 @@ li{
 }
 /* 购物车弹窗样式*/
 .top .cart-shop{
+	width: 100px;
 	height: 100px;
 	line-height: 100px;
-	position: relative;
+	position: absolute;
+	right: 0px;
+	top:0px;
 }
 .top .cart-shop .cart-nav .sep{
 	position: absolute;
